@@ -31,7 +31,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["why", "quickstart", "faq"]
+      "pages": ["supa", "quickstart", "faq"]
     },
     {
       "group": "Features",
