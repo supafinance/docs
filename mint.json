@@ -21,13 +21,6 @@
     "url": "https://supa.finance/app"
   },
 
-  "anchors": [
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/SudW6w4v28"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
@@ -50,7 +43,7 @@
         "guides/using-boost-browser",
         "guides/creating-macros",
         "guides/build-an-automation",
-        "guides/use-macros-with-dynamic-data"
+        "guides/use-macros-with"
       ]
     },
     {
@@ -63,10 +56,14 @@
     {
       "group": "API Reference",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete",
-        "api-reference/endpoint/get"
+        {
+          "group": "Endpoints",
+          "pages": [
+            "api-reference/endpoint/delete",
+            "api-reference/endpoint/create",
+            "api-reference/endpoint/get"
+          ]
+        }
       ]
     }
   ],
