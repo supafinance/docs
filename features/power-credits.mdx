@@ -1,65 +1,38 @@
 ---
 title: "Power Credits"
-description: "The navigation field in mint.json defines the pages that go in the navigation menu"
 ---
 
-The navigation menu is the list of links on every website.
+## Overview
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+`Power Credits (PC)` serve as the primary medium for covering the compute costs associated with running automations in Supa.
 
-## Navigation syntax
+## Acquiring Power Credits
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+- **Access**: Click on the ⚡️ icon on the navbar.
+- **Purchase Method**: Power Credits can be bought using USDC.
 
-<CodeGroup>
+## Usage of Power Credits
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+### Starting Automations
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+- **Initial Deposit**: Automations require a deposit of 5 PC to begin.
+- **Refund Policy**: Upon stopping an automation, the 5 PC deposit is immediately refunded.
+- **Consumption Rate**: Automations gradually consume PC over time.
 
-</CodeGroup>
+### Paying Gas with PC
 
-## Folders
+- **Default Setting**: By default, automations use PC to cover transaction costs.
+- **Alternative Option**: Users preferring to use ETH or other native tokens must ensure these are available in their Supa Wallet.
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+## Running Out of Power Credits
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+### Scenario
 
-<Warning>
+- If a user's Power Credit balance falls below a critical threshold while automations are running, other users are given the opportunity to stop these automations.
+- **Incentive**: Users who send a transaction to stop an automation under these circumstances are rewarded with a fee.
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+### Best Practices
 
-</Warning>
+- Users are advised to proactively manage their automations, either by stopping them in time or ensuring an adequate supply of Power Credits.
 
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
-
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+Utilizing Power Credits effectively is crucial for the smooth operation of automations in Supa. Users should regularly monitor their PC balance and manage their automations accordingly to avoid disruptions.
