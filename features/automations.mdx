@@ -2,13 +2,13 @@
 title: "Automations"
 ---
 
-## Introduction
+## Overview
 
-`Automations` are a pivotal feature in Supa, designed to add a layer of versatility and efficiency to contract actions. By utilizing Gelato, automations transform contract actions into reusable deployment containers, enriched with user-defined conditions.
+Automations play a pivotal role in Supa by adding a layer of versatility and efficiency to contract actions. By utilizing [Gelato](https://www.gelato.network), automations transform contract actions into reusable deployment containers, enriched with user-defined conditions.
 
 ## Creation of Automations
 
-- **Access**: Visit the automation section at [www.supa.finance/automations](www.supa.finance/automations) and click on 'Create'.
+- **Access**: Go to [supa.finance/automations](https://www.supa.finance/automations) and click on "Create".
 - **Process**: Start by selecting a macro, then add conditional options to tailor it to your needs.
 
 ## Types of Conditions
@@ -19,8 +19,8 @@ title: "Automations"
 
 - Dynamic inputs allow the modification of macro code values, creating more adaptable automations.
 - **Types**:
-  - **Native Token Balance**: Fetches the balance of native tokens like ETH, AETH, MATIC.
-  - **Token Balance**: Retrieves the balance of ERC20 tokens in the deploying Supa Wallet.
+  - **Native Token Balance**: Fetches the balance of native tokens, such as ETH, AETH, or MATIC.
+  - **Token Balance**: Retrieves the balance of ERC-20 tokens in the deploying Supa Wallet.
   - **Current Time**: Provides the current time in Unix timestamp format.
   - **TokenID**: Useful for referencing NFTs generated during automation.
   - **Outputs from Other Contracts**: Utilize outputs from previous contract calls as inputs.
@@ -30,15 +30,15 @@ title: "Automations"
 
 - **Types**:
   - **Timestamp**: Unix timestamp format for scheduling.
-  - **Action Type**: Includes options like blocker, last, loop, and once, defining how and when conditions execute.
-  - **If Types**: Logical operators like and, or, and nested for complex condition structures.
+  - **Action Type**: Includes options such as blocker, last, loop, and once, defining how and when conditions execute.
+  - **If Types**: Logical operators such as and, or, and nested for complex condition structures.
   - **Time Interval**: Schedule execution on a recurring basis (monthly, weekly, daily, hourly, etc.).
 
 ## Custom Conditions
 
 - **On-chain**: Fetch a contract's ABI to call specific functions and set them as conditions.
-- **Off-chain**: Call any public API returning a JSON object, with JSONata query support for logic application.
-- **Dual-sided**: Compare two custom conditions, like prices from different sources.
+- **Off-chain**: Call any public API returning a JSON object, with JSON data query support for logic application.
+- **Dual-sided**: Compare two custom conditions, such as prices from different sources.
 
 ## Tracked Price
 
@@ -47,7 +47,7 @@ title: "Automations"
 ## Deployment
 
 - Click 'Deploy', choose the Supa Wallet for deployment, and execute the transaction.
-- Requires a minimum of 5 Power Credits to run an automation.
+- Requires a minimum of 5 Power Credits (PC) to run an automation.
 
 ## Forkable Automations
 
@@ -60,7 +60,9 @@ title: "Automations"
 
 ## Cost
 
-- Automations consume Power Credits at a rate of 0.0005 PC/min.
-- 1 Power Credit equals approximately 2000 runs.
+- Automations consume Power Credits (PC) at a rate of 0.0005 PC/min.
+- 1 PC equals approximately 2,000 runs.
+
+---
 
 Utilize these features in Supa to create sophisticated, customizable automations that enhance your interaction with the web3 space.
