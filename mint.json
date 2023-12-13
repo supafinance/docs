@@ -37,20 +37,10 @@
         "features/marketplace"
       ]
     },
-    {
-      "group": "Guides",
-      "pages": []
-    },
+
     {
       "group": "Technical Reference",
-      "pages": [
-        "reference/contract-address",
-        "reference/dapp-simulation-integration"
-      ]
-    }
-    {
-      "group": "API Reference",
-      "pages": []
+      "pages": ["reference/contract-address"]
     }
   ],
   "footerSocials": {
