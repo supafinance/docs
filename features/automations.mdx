@@ -1,87 +1,68 @@
 ---
 title: "Automations"
-description: "Text, title, and styling in standard markdown"
 ---
 
-## Titles
+# Automations in Supa
 
-Best used for section headers.
+## Introduction
 
-```md
-## Titles
-```
+`Automations` are a pivotal feature in Supa, designed to add a layer of versatility and efficiency to contract actions. By utilizing Gelato, automations transform contract actions into reusable deployment containers, enriched with user-defined conditions.
 
-### Subtitles
+## Creation of Automations
 
-Best use to subsection headers.
+- **Access**: Visit the automation section at [www.supa.finance/automations](www.supa.finance/automations) and click on 'Create'.
+- **Process**: Start by selecting a macro, then add conditional options to tailor it to your needs.
 
-```md
-### Subtitles
-```
+## Types of Conditions
 
-<Tip>
+- **Flexibility**: Choose from on-chain or off-chain triggers to run your macros.
 
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
+## Dynamic Inputs
 
-</Tip>
+- Dynamic inputs allow the modification of macro code values, creating more adaptable automations.
+- **Types**:
+  - **Native Token Balance**: Fetches the balance of native tokens like ETH, AETH, MATIC.
+  - **Token Balance**: Retrieves the balance of ERC20 tokens in the deploying Supa Wallet.
+  - **Current Time**: Provides the current time in Unix timestamp format.
+  - **TokenID**: Useful for referencing NFTs generated during automation.
+  - **Outputs from Other Contracts**: Utilize outputs from previous contract calls as inputs.
+  - **Uniswap v3 Inputs**: Specific helpers for Uniswap v3, including swap slippage, liquidity amounts, and tick positions.
 
-## Text Formatting
+## Conditions
 
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
+- **Types**:
+  - **Timestamp**: Unix timestamp format for scheduling.
+  - **Action Type**: Includes options like blocker, last, loop, and once, defining how and when conditions execute.
+  - **If Types**: Logical operators like and, or, and nested for complex condition structures.
+  - **Time Interval**: Schedule execution on a recurring basis (monthly, weekly, daily, hourly, etc.).
 
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
+## Custom Conditions
 
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
+- **On-chain**: Fetch a contract's ABI to call specific functions and set them as conditions.
+- **Off-chain**: Call any public API returning a JSON object, with JSONata query support for logic application.
+- **Dual-sided**: Compare two custom conditions, like prices from different sources.
 
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
+## Tracked Price
 
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
+- Enables price tracking in swap macros, allowing conditions based on price changes.
 
-## Linking to Pages
+## Deployment
 
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
+- Click 'Deploy', choose the Supa Wallet for deployment, and execute the transaction.
+- Requires a minimum of 5 Power Credits to run an automation.
 
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
+## Forkable Automations
 
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
+- Users can copy and modify forkable automations, claiming ownership upon saving.
 
-## Blockquotes
+## Public and Private Automations
 
-### Singleline
+- **Public Automations**: Added to the marketplace for community use and sharing.
+- **Private Automations**: Visible only to the creator, ensuring privacy.
 
-To create a blockquote, add a `>` in front of a paragraph.
+## Cost
 
-> Dorothy followed her through many of the beautiful rooms in her castle.
+- Automations consume Power Credits at a rate of 0.0005 PC/min.
+- 1 Power Credit equals approximately 2000 runs.
 
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
-```
-
-### Multiline
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-### LaTeX
-
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
-
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+Utilize these features in Supa to create sophisticated, customizable automations that enhance your interaction with the web3 space.

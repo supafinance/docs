@@ -1,58 +1,33 @@
 ---
 title: "Macros"
-description: "Add image, video, and other HTML elements"
+description: "If you've used execel you know what we are talking about"
 ---
 
-<img
-  style={{ borderRadius: "0.5rem" }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+## Overview
 
-## Image
+`Macros` are an integral feature of our platform, designed to store and reuse batch transactions. The primary function of macros is to construct and streamline actions in automations, making the process more efficient and user-friendly.
 
-### Using Markdown
+## Creating Macros
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Macros can be created through two distinct methods, depending on the capabilities of the decentralized application (dApp) you are interacting with:
 
-```md
-![title](/path/image.jpg)
-```
+### Manual Mode
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+- **Usage**: This mode is utilized when a decentralized application (dApp) does not support transaction simulations.
+- **Process**:
+  - Users are required to execute each transaction they want to record for a macro, step by step.
+  - Executed transactions will appear in the transaction history queue but will not be re-executed.
+  - To save these transactions as a macro, simply click on `Save Macro`.
+  - The executed and pending transactions will then be visible in the macro list.
 
-### Using Embeds
+### Simulation Mode
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+- **Usage**: This mode is applicable when a dApp supports transaction simulations.
+- **Process**:
+  - Users can simulate transactions without needing to execute them.
+  - During the simulation, users can observe the UI changes of the dApp and continue adding new transactions to the queue.
+  - These simulated transactions can then be saved as a macro.
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+## Conclusion
 
-## Embeds and HTML elements
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-  style={{ width: "100%", borderRadius: "0.5rem" }}
-></iframe>
-
-<br />
-
-<Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
-</Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+Macros are designed to be flexible and user-friendly, catering to various user requirements and skill levels. Whether you're manually executing transactions or utilizing simulations, macros provide an efficient way to automate and replicate complex transaction sequences.
