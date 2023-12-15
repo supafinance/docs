@@ -15,12 +15,10 @@
       "to": "#07C983"
     }
   },
-
   "topbarCtaButton": {
     "name": "App",
     "url": "https://supa.finance/app"
   },
-
   "navigation": [
     {
       "group": "Get Started",
@@ -38,33 +36,8 @@
       ]
     },
     {
-      "group": "Guides",
-      "pages": [
-        "guides/using-boost-browser",
-        "guides/creating-macros",
-        "guides/build-an-automation",
-        "guides/use-macros-with"
-      ]
-    },
-    {
       "group": "Technical Reference",
-      "pages": [
-        "reference/contract-address",
-        "reference/dapp-simulation-integration"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        {
-          "group": "Endpoints",
-          "pages": [
-            "api-reference/endpoint/delete",
-            "api-reference/endpoint/create",
-            "api-reference/endpoint/get"
-          ]
-        }
-      ]
+      "pages": ["reference/contract-address"]
     }
   ],
   "footerSocials": {
