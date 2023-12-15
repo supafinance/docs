@@ -37,7 +37,7 @@
     },
     {
       "group": "Technical Reference",
-      "pages": ["reference/contract-address"]
+      "pages": ["reference/contract-address", "audit"]
     }
   ],
   "footerSocials": {
