@@ -15,12 +15,10 @@
       "to": "#07C983"
     }
   },
-
   "topbarCtaButton": {
     "name": "App",
     "url": "https://supa.finance/app"
   },
-
   "navigation": [
     {
       "group": "Get Started",
@@ -37,7 +35,6 @@
         "features/marketplace"
       ]
     },
-
     {
       "group": "Technical Reference",
       "pages": ["reference/contract-address"]
